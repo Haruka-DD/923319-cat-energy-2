@@ -1,4 +1,15 @@
 /* page */
+.page {
+  height: 100%;
+  font-size: 14px;
+  font-family: $primary-font;
+  line-height: 18px;
+  color: $special-dark-grey;
+}
+
 .page__body {
   font-family: $primary-font;
+  min-height: 100%;
+  margin: 0;
+  background-color: $basic-white;
 }
