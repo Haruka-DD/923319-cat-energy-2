@@ -4,12 +4,13 @@
   font-size: 14px;
   font-family: $primary-font;
   line-height: 18px;
-  color: $special-dark-grey;
+  font-weight: 400;
+  color: $special-dark-secondary-contrast-color;
 }
 
 .page__body {
   font-family: $primary-font;
   min-height: 100%;
   margin: 0;
-  background-color: $basic-white;
+  background-color: $basic-color;
 }

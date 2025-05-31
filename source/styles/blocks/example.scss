@@ -1,1 +1,23 @@
 /* example */
+.example {
+  background-color: $special-secondary-contrast-color;
+}
+
+.example__title {
+  font-family: $second-font;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.example__data-list {
+  list-style-type: none;
+}
+
+.example__cost {
+  font-family: $second-font;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
