@@ -9,8 +9,9 @@
 }
 
 .page__body {
-  font-family: $primary-font;
   min-height: 100%;
   margin: 0;
   background-color: $basic-color;
+  display: flex;
+  flex-direction: column;
 }

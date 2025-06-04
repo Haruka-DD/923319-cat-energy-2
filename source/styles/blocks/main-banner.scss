@@ -1,10 +1,10 @@
 /* main-banner */
 
 .main-banner {
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 63%, #ffffff 37%), url("../../images/banner-background-cat-mobile@1x.jpg"), linear-gradient(#4f4e54, #434248);
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 63%, #ffffff 37%), image-set("../../images/banner-background-cat-mobile@1x.jpg" 1x, "../../images/banner-background-cat-mobile@2x.jpg" 2x), linear-gradient(#4f4e54, #434248);
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 100%, 100% auto, 100%;
+  background-size: 100%, auto, 100%;
   min-height: 480px;
 }
 
