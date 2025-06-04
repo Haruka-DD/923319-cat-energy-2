@@ -1,7 +1,7 @@
 /* programs */
 
 .programs__list {
-  list-style-type: none;
+  @include reset-ul;
 }
 
 .programs__item {

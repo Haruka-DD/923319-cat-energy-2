@@ -9,5 +9,5 @@
 }
 
 .how-it-works__list {
-  list-style-type: none;
+  @include reset-ul;
 }

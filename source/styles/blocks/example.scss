@@ -12,7 +12,7 @@
 }
 
 .example__data-list {
-  list-style-type: none;
+  @include reset-ul;
 }
 
 .example__cost {
@@ -20,5 +20,6 @@
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
+  color: $contrast-color;
   text-transform: uppercase;
 }

@@ -7,3 +7,8 @@
     src: $font-src;
   }
 }
+
+@mixin reset-ul {
+  list-style-type: none;
+  padding: 0;
+}
