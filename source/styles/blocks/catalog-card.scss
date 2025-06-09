@@ -1,4 +1,6 @@
 .catalog-card--to-all {
+  text-align: center;
+
   &::before {
     content: "";
     display: block;
@@ -6,6 +8,7 @@
     height: 30px;
     background-image: url("../../icons/stack.svg#icon-plus");
     background-repeat: no-repeat;
+    margin: 0 auto;
   }
 }
 
