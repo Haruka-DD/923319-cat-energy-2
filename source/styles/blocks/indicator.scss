@@ -1,3 +1,9 @@
+.indicator {
+  border: 1px solid $second-border-color;
+  border-radius: 3px;
+  position: relative;
+}
+
 .indicator__value {
   font-family: $second-font;
   font-size: 24px;
@@ -5,10 +11,19 @@
   font-weight: 400;
   color: $contrast-color;
   text-transform: uppercase;
+  text-align: center;
+  margin: 14px auto 18px;
 }
 
 .indicator__name {
   font-family: $primary-font;
+  background-color: $special-secondary-contrast-color;
   font-size: 12px;
   line-height: 12px;
+  text-align: center;
+  width: 87px;
+  position: absolute;
+  z-index: 10;
+  bottom: -24px;
+  left: calc(50% - 43px);
 }

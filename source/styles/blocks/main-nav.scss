@@ -1,23 +1,7 @@
-/* main-nav */
-.main-nav {
-  background-color: $basic-color;
-}
-
-.main-nav__toggle {
-  width: 24px;
-  height: 24px;
-  border: none;
-  background-image: url("../../icons/stack.svg#nav-toggle");
-  background-repeat: no-repeat;
-  background-color: $basic-color;
-}
-
-.main-nav__toggle--active {
-  background-image: url("../../icons/stack.svg#nav-toggle-active");
-}
-
 .main-nav__list {
   @include reset-ul;
+  text-align: center;
+  margin: 0;
 }
 
 .main-nav__item {
@@ -27,9 +11,48 @@
   text-transform: uppercase;
   color: $contrast-color;
   background-color: $basic-color;
+  border-top: 1px solid $border-color;
 }
 
 .main-nav__link {
   color: $contrast-color;
   text-decoration: none;
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+    justify-content: flex-end;
+  }
+
+  .main-nav__item {
+    font-size: 18px;
+    line-height: 24px;
+    border-top: none;
+    background: none;
+  }
+
+  .main-nav__link {
+    padding: 12px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .main-nav__link--light {
+    color: $basic-color;
+  }
+
+  .main-nav__list {
+    gap: 5px 33px;
+  }
 }

@@ -45,3 +45,14 @@
   border-bottom: 1px solid $border-color;
   padding-bottom: 23px;
 }
+
+@media (min-width: $desktop-width) {
+  .programs__wrapper {
+    margin: 0 110px;
+  }
+
+  .programs__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(570px, 1fr));
+  }
+}

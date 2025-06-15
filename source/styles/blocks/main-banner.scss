@@ -5,7 +5,11 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100%, auto, 100%;
-  min-height: 480px;
+}
+
+.main-banner__wrapper {
+  position: relative;
+  margin: 0 20px;
 }
 
 .main-banner__title {
@@ -15,6 +19,9 @@
   font-weight: 400;
   color: $basic-color;
   text-align: center;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 25px;
 }
 
 .main-banner__text {
@@ -24,4 +31,91 @@
   color: $basic-color;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+}
+
+.main-banner__img {
+  display: block;
+  margin: 25px auto;
+}
+
+.main-banner__button {
+  text-align: center;
+  padding: 10px;
+  display: block;
+  position: absolute;
+  bottom: -47px;
+  transform: translateX(-50%);
+  left: 50%;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .main-banner {
+    background: none;
+  }
+
+  .main-banner__wrapper {
+    margin: 0 30px;
+  }
+
+  .main-banner__title {
+    color: $contrast-color;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    max-width: 416px;
+    margin-left: 90px;
+  }
+
+  .main-banner__text {
+    color: $contrast-color;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    max-width: 416px;
+    margin-left: 90px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-banner__button {
+    width: auto;
+    padding: 14px 26px;
+    margin-left: 90px;
+    bottom: 526px;
+    left: auto;
+    transform: none;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-banner {
+    background-image: linear-gradient(to left, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%), image-set("../images/banner-background-cat-desktop@1x.jpg" 1x, "../images/banner-background-cat-desktop@2x.jpg" 2x), linear-gradient(#4f4e54, #434248);
+    background-repeat: no-repeat;
+    background-position: top, top right, top;
+    background-size: 100%, contain, 100%;
+    min-height: 694px;
+    width: 100%;
+  }
+
+  .main-banner__wrapper {
+    padding-top: 200px;
+    margin: 0;
+  }
+
+  .main-banner__img {
+    position: absolute;
+    top: 143px;
+    right: 331px;
+  }
+
+  .main-banner__button {
+    position: static;
+    display: inline-block;
+  }
 }

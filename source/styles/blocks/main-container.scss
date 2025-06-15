@@ -2,3 +2,13 @@
 .main-container {
   flex-grow: 1;
 }
+
+.main-banner {
+  min-height: 480px;
+}
+
+@media (min-width: $desktop-width) {
+  .main-container__banner {
+    min-height: 694px;
+  }
+}
