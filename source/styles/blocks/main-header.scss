@@ -21,16 +21,15 @@
   margin-left: auto;
 }
 
+.main-header__toggle--no-js {
+  display: none;
+}
+
 .main-header__toggle--active {
   background-image: url("../../icons/stack.svg#nav-toggle-active");
 }
 
 @media (min-width: $tablet-width) {
-  .main-header {
-    display: grid;
-    grid-template-columns: 174px 1fr;
-  }
-
   .main-header__wrapper {
     margin: 0;
     align-items: flex-start;
@@ -42,10 +41,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-header {
-    grid-template-columns: 50% 50%;
-  }
-
   .main-header__logo {
     grid-template-columns: auto auto;
     justify-content: start;

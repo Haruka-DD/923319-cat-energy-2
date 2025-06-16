@@ -37,3 +37,9 @@
     border-bottom: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-footer__wrapper {
+    @include max-size;
+  }
+}

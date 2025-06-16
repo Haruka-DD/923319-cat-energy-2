@@ -72,6 +72,6 @@
 
 @media (min-width: $desktop-width) {
   .how-it-works__wrapper {
-    margin: 0 110px;
+    @include max-size;
   }
 }

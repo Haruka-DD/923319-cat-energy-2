@@ -26,11 +26,13 @@
 
 @media (min-width: $desktop-width) {
   .second-catalog__title {
+    @include max-size;
     font-size: 40px;
     line-height: 40px;
   }
 
   .second-catalog__wrapper {
+    @include max-size;
     display: grid;
     grid-template-columns: 1fr 245px;
     margin: 0 110px;

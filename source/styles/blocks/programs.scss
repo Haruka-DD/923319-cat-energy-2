@@ -48,7 +48,7 @@
 
 @media (min-width: $desktop-width) {
   .programs__wrapper {
-    margin: 0 110px;
+    @include max-size;
   }
 
   .programs__list {
