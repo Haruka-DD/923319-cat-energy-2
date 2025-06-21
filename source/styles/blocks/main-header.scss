@@ -1,5 +1,5 @@
 .main-header__wrapper {
-  margin: 14px 20px 13px;
+  margin: 12px 20px 11px;
   display: flex;
   align-items: center;
 }
@@ -8,35 +8,12 @@
   display: grid;
   grid-template-columns: auto 1fr;
   width: 100%;
-  align-items: center;
-}
-
-.main-header__toggle {
-  width: 24px;
-  height: 24px;
-  border: none;
-  background-image: url("../../icons/stack.svg#nav-toggle");
-  background-repeat: no-repeat;
-  background-color: $basic-color;
-  margin-left: auto;
-}
-
-.main-header__toggle--no-js {
-  display: none;
-}
-
-.main-header__toggle--active {
-  background-image: url("../../icons/stack.svg#nav-toggle-active");
 }
 
 @media (min-width: $tablet-width) {
   .main-header__wrapper {
     margin: 0;
     align-items: flex-start;
-  }
-
-  .main-header__toggle {
-    display: none;
   }
 }
 

@@ -20,7 +20,8 @@
 .example__data-list {
   @include reset-ul;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(124px, 1fr));
+  grid-template-columns: repeat(auto-fit, 124px);
+  justify-content: center;
   gap: 32px;
   margin: 20px 0 34px;
 }
@@ -36,8 +37,8 @@
 }
 
 .example__slider {
-  width: min(90vh, 90vw);
-  height: min(90vh, 90vw);
+  width: 280px;
+  height: 256px;
   margin: 20px auto;
 }
 
@@ -69,6 +70,8 @@
 
   .example__text {
     margin: 60px 0 55px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .example__data-wrapper {
@@ -78,10 +81,6 @@
 
   .example__data-list {
     max-width: 370px;
-  }
-
-  .indicator__name {
-    background-color: $basic-color;
   }
 
   .example__cost {
@@ -99,8 +98,8 @@
   }
 
   .example__slider {
-    max-width: 560px;
-    max-height: 512px;
+    width: 560px;
+    height: 512px;
     margin-top: 99px;
     margin-bottom: 101px;
   }
@@ -108,29 +107,39 @@
 
 @media (min-width: $desktop-width) {
   .example__wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-
     @include max-size;
+    display: flex;
+    align-items: end;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .example::before {
+    bottom: 0;
+  }
+
+  .example__wrapper-text {
+    position: relative;
+    padding-bottom: 55px;
   }
 
   .example__title {
-    grid-column: 1 / 2;
-    display: inline-grid;
+    max-width: 100%;
+    margin-bottom: 146px;
   }
 
   .example__text {
-    grid-column: 1 / 2;
-    display: inline-grid;
-    z-index: 1;
     max-width: 436px;
+    margin: 60px 0 69px;
   }
 
   .example__data-wrapper {
-    grid-column: 1 / 2;
-    display: grid;
-    grid-template-columns: none;
+    display: block;
+  }
+
+  .example__data-list {
+    max-width: 436px;
+    justify-content: left;
   }
 
   .example__cost {
@@ -140,9 +149,17 @@
     max-width: 436px;
   }
 
+  .example__cost-name {
+    text-align: left;
+  }
+
+  .example__cost-value {
+    text-align: left;
+  }
+
   .example__slider {
-    grid-column: 2 / 3;
-    grid-row: 1 / 4;
-    display: inline-grid;
+    margin-bottom: 77px;
+    margin-right: 0;
+    margin-top: 0;
   }
 }

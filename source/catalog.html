@@ -13,10 +13,10 @@
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page__body">
-  <header class="page__header page__header--not-index main-header">
+<body class="page__body ">
+  <header class="page__header main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo logo" href="index.html">
+      <a class="main-header__logo logo" href="#">
         <span class="visually-hidden">Логотип</span>
         <picture>
           <source media="(min-width: 1440px)" srcset="images/logotype-trademark-desktop.svg" width="70" height="59" type="image/svg+xml">
@@ -25,24 +25,23 @@
         </picture>
         <img class="logo__text" src="images/logotype-text.svg" width="101" height="18" alt="Логотип Cat Energy">
       </a>
-      <button class="main-header__toggle main-header__toggle--no-js" type="button">
+
+    </div>
+    <nav class="main-nav main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-    </div>
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link  main-nav__link--active" href="#">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--active" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Подбор программы</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
