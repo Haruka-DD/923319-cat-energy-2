@@ -8,6 +8,10 @@
   color: $special-dark-secondary-contrast-color;
 }
 
+.page__header {
+  border-bottom: 1px solid $border-color;
+}
+
 .page__body {
   min-height: 100%;
   margin: 0;
@@ -20,10 +24,11 @@
 @media (min-width: $tablet-width) {
   .page__header {
     @include max-size;
+    border-bottom: none;
     display: grid;
     grid-template-columns: 202px 1fr;
     width: 100%;
-    padding: 25px 30px;
+    padding: 24px 30px;
   }
 }
 
