@@ -52,7 +52,7 @@
       content: "";
       background-color: $special-secondary-contrast-color;
       height: 462px;
-      bottom: 40px;
+      bottom: 0;
       display: block;
       position: absolute;
       width: 100%;
@@ -101,7 +101,7 @@
     width: 560px;
     height: 512px;
     margin-top: 99px;
-    margin-bottom: 101px;
+    margin-bottom: 55px;
   }
 }
 

@@ -30,8 +30,12 @@
 
 @media (min-width: $desktop-width) {
   .main-header__logo {
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 1fr;
     justify-content: start;
     gap: 14px;
+
+    .logo__text {
+      margin-left: 14px;
+    }
   }
 }
