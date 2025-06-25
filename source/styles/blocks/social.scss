@@ -10,7 +10,7 @@
 }
 
 .social__link {
-  min-width: 26px;
+  min-width: 28px;
   min-height: 22px;
   display: block;
 
@@ -52,5 +52,17 @@
     mask-image: url("../../icons/stack.svg#icon-telegram");
     mask-repeat: no-repeat;
     background-color: $btn-bg-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    margin-left: 43px;
+  }
+
+  .social__link--telegram::before {
+    width: 26px;
+    height: 20px;
+    margin-top: 3px;
   }
 }
