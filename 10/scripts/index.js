@@ -1,0 +1,1 @@
+document.querySelector(".main-nav").classList.remove("main-nav--nojs");var e=document.querySelector(".main-nav__toggle"),n=document.querySelector(".main-nav__list");e.addEventListener("click",()=>{n.classList.toggle("main-nav__list--opened"),e.classList.toggle("main-nav__toggle--active")});
