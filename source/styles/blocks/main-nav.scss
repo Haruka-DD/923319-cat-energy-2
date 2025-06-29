@@ -132,6 +132,7 @@
   .main-nav__link--active {
     &::after {
       background-color: $basic-bg-color;
+      right: 1px;
     }
   }
 
