@@ -148,12 +148,14 @@
           <p class="contacts__city">Санкт-Петербург</p>
         </address>
       </div>
-      <iframe class="contacts__yandex-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Afca79d4734dc1254cdd9b719ae19dcb95488b27becfcb7ec7d98cb7480965816&amp;source=constructor" width="1220" height="400"></iframe>
-      <picture>
-        <source type="image/jpeg" media="(min-width: 1440px)" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x" width="1440" height="400">
-        <source type="image/jpeg" media="(min-width: 768px)" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x" width="768" height="400">
-        <img class="contacts__map" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Месторасположение магазина">
-      </picture>
+      <div class="contacts__map-wrapper contacts__map-wrapper--nojs">
+        <iframe class="contacts__yandex-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Afca79d4734dc1254cdd9b719ae19dcb95488b27becfcb7ec7d98cb7480965816&amp;source=constructor" width="1220" height="400"></iframe>
+        <picture>
+          <source type="image/jpeg" media="(min-width: 1440px)" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x" width="1440" height="400">
+          <source type="image/jpeg" media="(min-width: 768px)" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x" width="768" height="400">
+          <img class="contacts__map" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Месторасположение магазина">
+        </picture>
+      </div>
     </div>
     <div class="main-footer__wrapper">
       <a class="main-footer__logo logo" href="#">

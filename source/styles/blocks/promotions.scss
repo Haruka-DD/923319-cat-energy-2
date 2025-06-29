@@ -5,6 +5,7 @@
   font-weight: 400;
   color: $contrast-color;
   margin: 0 108px 0 20px;
+  padding-right: 40px;
   position: relative;
   box-shadow: -40px 0 $basic-color;
   background-color: $basic-color;
@@ -40,8 +41,8 @@
 
 @media (min-width: $tablet-width) {
   .promotions__title {
-    font-size: 36px;
-    line-height: 36px;
+    font-size: 32px;
+    line-height: 32px;
     margin: 80px 70px 66px;
     padding-right: 40px;
   }
@@ -56,7 +57,7 @@
     display: grid;
     grid-template-columns: 1fr min-content;
     margin: 24px auto 80px;
-    max-width: 752px;
+    max-width: 632px;
   }
 }
 
@@ -64,14 +65,19 @@
   .promotions__title {
     font-size: 40px;
     line-height: 40px;
-    margin: 80px 0 66px;
+    margin: 95px 0 66px;
   }
 
   .promotions__wrapper {
     @include max-size;
   }
 
+  .promotions__text {
+    margin: 71px 68px 24px;
+  }
+
   .promotions__form {
-    margin: 24px auto 80px;
+    margin: 24px auto 105px;
+    max-width: 752px;
   }
 }

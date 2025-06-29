@@ -36,14 +36,15 @@
     background-color: $basic-color;
     font-size: 14px;
     line-height: 14px;
-    max-width: fit-content;
+    width: fit-content;
+    max-width: 142px;
     padding: 0 8px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .indicator__name {
-    background-color: $special-secondary-contrast-color;
+    background-color: $secondary-contrast-color;
   }
 
   .indicator__value {

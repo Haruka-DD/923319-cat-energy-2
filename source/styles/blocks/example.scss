@@ -139,6 +139,7 @@
   .example::before {
     bottom: 0;
     height: 460px;
+    background-color: $secondary-contrast-color;
   }
 
   .example__wrapper-text {
